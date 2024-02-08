@@ -1,3 +1,7 @@
+:root {
+    --text-color: #cecece;
+}
+
 html {
   font-size: 14px;
 }
@@ -19,8 +23,51 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #333;
+  color: var(--text-color);
+}
+
+nav {
+    background-color: #242424;
 }
 
 .logo-img {
     height: 50px;
+}
+
+.navbar-search {
+    width: 100%;
+    text-align:center;
+    
+}
+
+    .navbar-search > form > input[type="text"] {
+        border: none;
+        background-color: #1d1d1d;
+        width: 20%;
+        padding: 7px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .navbar-search > form > input[type="text"]:hover {
+        background-color: #272727;
+
+    }
+
+    .navbar-search > form > input[type="text"]:focus {
+        border: none;
+        text-decoration: none;
+        outline: none;
+        color: #808080;
+        width: 45%;
+    }
+
+.better-nlink {
+    color: #8f8f8f !important;
+}
+
+.better-nlink:hover {
+    color: #b4b4b4 !important;
 }
