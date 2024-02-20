@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PralHub.Models;
 
 namespace PralHub.Data
 {
@@ -9,5 +10,6 @@ namespace PralHub.Data
             : base(options)
         {
         }
+        public DbSet<PralHub.Models.VideoModel> VideoModel { get; set; } = default!;
     }
 }

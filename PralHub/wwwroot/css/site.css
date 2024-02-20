@@ -23,12 +23,41 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color: #333;
+  background-color: #000;
   color: var(--text-color);
 }
 
 nav {
     background-color: #242424;
+    margin-bottom: 0px !important;
+}
+
+nav > .container-fluid {
+    width: 1300px;
+}
+
+.below-nav {
+    background-color: #242424;
+    margin-top: 0;
+    border-top: 1px solid #808080;
+}
+
+.below-nav >ul >li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+footer {
+    background-color: #242424;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #1d1d1d*/
 }
 
 .logo-img {
@@ -48,6 +77,7 @@ nav {
         padding: 7px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        color: #808080;
         transition: all 0.1s ease-in-out;
     }
 
@@ -60,7 +90,6 @@ nav {
         border: none;
         text-decoration: none;
         outline: none;
-        color: #808080;
         width: 45%;
     }
 
@@ -71,3 +100,19 @@ nav {
 .better-nlink:hover {
     color: #b4b4b4 !important;
 }
+
+/*VIDEO CLASS*/
+
+.video-class > a {
+    text-decoration: none;
+    color: white;
+}
+
+    .video-class > a:hover > h5 {
+        color: #e89343;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }

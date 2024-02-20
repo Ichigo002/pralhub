@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PralHub.Models.VideoModel>
+
+@{
+    ViewData["Title"] = "Index";
+
+    int videosCount = Model.Count();
+    int rowsCount = 0; // videosCount / 4;
+
+}
+
+<div class="container">
+    <div class="row">
+        @foreach(var item in Model)
+        {
+            <div class="video-class col-sm-12 col-md-6 col-lg-4 col-xl-3" onmouseover="displayGIF(this)" onmouseout="displayJPG(this)">
+                <a asp-controller="VideoModels" asp-action="Details" asp-route-id="@item.Id">
+                    <img class="img-fluid" src="@item.ThumbanilUrlImg"/>
+                    <h5>@item.Title</h5>
+                    <strong>@item.Views Views</strong>
+                    <div>Likes: @item.Likes | Unlikes: @item.Unlikes</div>
+                </a>
+            </div>   
+        } 
+    </div>
+</div>

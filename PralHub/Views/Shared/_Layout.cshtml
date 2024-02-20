@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     
     <link rel="stylesheet" href="~/PralHub.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/effects.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
@@ -32,8 +33,20 @@
                     </div>
                     <partial name="_LoginPartial" />
                 </div>
+                <!--
+                <div class="below-nav navbar-collapse flex-wrap" style="display:block !important;">
+                    <ul>
+                        <li class="col-md-2">HOME</li>
+                        <li class="col-md-2">PRAL VIDEOS</li>
+                        <li class="col-md-2">PRALSTARS</li>
+                        <li class="col-md-2">COMMUNITY</li>
+                    </ul>
+                </div>
+                -->
             </div>
+           
         </nav>
+       
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -41,7 +54,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class=" footer text-muted">
         <div class="container">
             &copy; 2024 - PralHub - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
